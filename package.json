@@ -1,0 +1,26 @@
+{
+  "name": "probe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aerdatus/probe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aerdatus/probe/issues"
+  },
+  "homepage": "https://github.com/aerdatus/probe#readme",
+  "dependencies": {
+    "async": "^1.5.2",
+    "bancroft": "0.0.12",
+    "fs-extra": "^0.30.0",
+    "gps-distance": "0.0.4",
+    "rpi-gpio": "^0.7.0"
+  }
+}
