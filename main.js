@@ -1,5 +1,4 @@
-var lineReader = require('line-reader'),
-  fs = require('fs'),
+var fs = require('fs'),
   Bancroft = require('bancroft'),
   distance = require('gps-distance'),
   gpio = require('rpi-gpio'),
