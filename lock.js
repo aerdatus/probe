@@ -14,7 +14,7 @@ bancroft.on('location', function(loc) {
       exec('date -s @' + parseInt(loc.timestamp / 1000), function(error, stdout, stderr) {
         console.log(stderr);
         console.log(stdout);
-        exec('/bin/bash /home/pi/boot', function(error, stdout, stderr) {
+        exec('/bin/bash /home/pi/probe/scripts/boot.sh', function(error, stdout, stderr) {
           console.log(stderr);
           console.log(stdout);
           //process.exit(0);
