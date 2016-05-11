@@ -53,6 +53,11 @@ bancroft.on('location', function(loc) {
 
 function findFile(path) {
   var files = fs.readdirSync(path);
+
+  files.sort(function(a, b) {
+    return fs.statSync(path + a).mtime.getTime() - fs.statSync(path + b).mtime.getTime();
+  });
+
   for (var i = files.length - 1; i >= 0; i--) {
     if (files[i].indexOf('output') >= 0 && files[i].indexOf('.csv') >= 0) {
       return path + files[i];
